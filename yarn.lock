@@ -1603,7 +1603,7 @@ pseudomap@^1.0.2:
 
 "push-receiver@git+https://github.com/fellowapp/push-receiver.git#fetch-instead-of-request":
   version "2.1.1"
-  resolved "git+ssh://git@github.com/fellowapp/push-receiver.git#3cd75ca5e534f25f4f2caefa096e8d7b577de82a"
+  resolved "git+ssh://git@github.com/fellowapp/push-receiver.git#8f5c08de03057e7ba9bab3d0e815b9fcfe9a0a29"
   dependencies:
     http_ece "^1.1.0"
     long "^5.2.3"
