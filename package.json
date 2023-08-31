@@ -2,7 +2,7 @@
   "name": "electron-push-receiver",
   "version": "2.1.3",
   "description": "A module to receive FCM notifications in electron",
-  "exports": "./src/index.mjs",
+  "exports": "./src/index.js",
   "repository": "https://github.com/MatthieuLemoine/electron-push-receiver",
   "author": "MatthieuLemoine",
   "license": "MIT",

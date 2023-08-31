@@ -1,4 +1,4 @@
-const constants = {
+module.exports = {
   // Event to be sent from renderer process to trigger service start
   START_NOTIFICATION_SERVICE: 'PUSH_RECEIVER:::START_NOTIFICATION_SERVICE',
   // Event sent to the renderer process once the service is up
@@ -10,5 +10,3 @@ const constants = {
   // Event sent to the renderer processs when the FCM token has been updated
   TOKEN_UPDATED: 'PUSH_RECEIVER:::TOKEN_UPDATED',
 };
-
-export const { START_NOTIFICATION_SERVICE, NOTIFICATION_SERVICE_STARTED, NOTIFICATION_SERVICE_ERROR, NOTIFICATION_RECEIVED, TOKEN_UPDATED } = constants
