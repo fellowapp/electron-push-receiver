@@ -40,7 +40,7 @@ function setup(webContents) {
       // Retrieve saved persistentId : avoid receiving all already received notifications on start
       const persistentIds = config.get('persistentIds') || [];
       // Register if no credentials or if firebase config has changed
-      if (!credentials || !savedFirebaseConfig || !savedFirebaseConfig.firebase || savedFirebaseConfig.firebase.appID !== firebaseConfig.firebase.appID ) {
+      if (!credentials || !credentials.fcm || !credentials.fcm.token || !savedFirebaseConfig || !savedFirebaseConfig.firebase || savedFirebaseConfig.firebase.appID !== firebaseConfig.firebase.appID ) {
         credentials = await register(firebaseConfig);
         // Save credentials for later use
         config.set('credentials', credentials);
